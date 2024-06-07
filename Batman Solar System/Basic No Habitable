@@ -151,3 +151,231 @@ ssb_zeta_system_initializer = {
 
 }
 #obyčejný system planety pojmenovane nápady jen tak z fleku 
+ssb_morgol_system_initializer = {
+	name = "Morgol"
+	class = "sc_black_hole"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Morgol"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Mogul"
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+	}
+	planet = {
+		name = "Fogul"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Tzangul"
+		class = "pc_barren_cold"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Xorgul"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Foskul"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+#Výplńový systém nic víc
+ssb_fornar_system_initializer = {
+	name = "Fornar"
+	class = "sc_b"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Fornar"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		name = "Festus"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+	}
+	planet = {
+		name = "Abbadon"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		moon = {
+			name = "Soin"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		name = "Freiz"
+		class = "pc_frozen"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 34
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Ceilpan"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+
+}
+
+ssb_polaroid_system_initializer = {
+	name = "Polaroid"
+	class = "sc_pulsar"
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Polaroid"
+		class = "pc_pulsar"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 38
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+	}
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = yes
+		change_orbit = 5
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
