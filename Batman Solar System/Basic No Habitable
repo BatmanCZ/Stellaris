@@ -5,17 +5,20 @@ ssb_omega_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 	planet = {
 		name = "Omega"
 		class = "pc_a_star"
@@ -69,4 +72,5 @@ ssb_omega_system_initializer = {
 	}
 
 }
+
 #galactic system co ma ve všech jménen A na začátku lze použit jako výplń
